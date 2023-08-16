@@ -30,4 +30,5 @@ with zipfile.ZipFile(zip_file_path, 'r') as zip:
   print('Done!')
 ```
 The directory "data" should appear now in the files tab with a subdirectory named "med_gallery", with multiple subdirecteries all containing images of ICD positive images with the label 1, and ICD negative images with the label 0.
-![import data](Images/data.png)
+![import data](Convolutional-NN-Project/Images
+/import_data.png)
