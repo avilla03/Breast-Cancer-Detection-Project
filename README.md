@@ -10,7 +10,6 @@ Hello! My name is Andrew Villapudua, a student at UC San Diego in La Jolla, Cali
 ## The Data
 I often times question the practicality of many topcis covered in school, so I emphasized the real-world application aspect of this project. So, I opted for a dataset which contians hundreds of thousands of images of breast tissue cells at the microscopic level to classify whether a given image is Invasive Ductal Carcinoma (ICD) positive, or negative. ICD is an invasive breast cancer that forms in the milk ducts, and in later stages inhabits the tissues of the breast. The way this dataset works - or all image recognition datasets for that matter - is it will contain your input data, a [# of color channels, height, width] tensor that represents each individual image. This image will contain a label, in this case, it will classify it as IDC positive or negative depending on the image given. Firstly, I will show the code snippet that takes the data downloaded from the link above on my google drive, into google colab.
 ```
-import requests # Get info from HTTP link
 import zipfile # Import data in form of a zipfile
 from pathlib import Path # Store path of data
 data_path = Path("data/")
