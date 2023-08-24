@@ -12,3 +12,17 @@ I often times question the practicality of many topcis covered in school, so I e
 
 The directory "data" should appear now in the files tab with a subdirectory named "med_gallery", with multiple subdirecteries all containing images of ICD positive images with the label 1, and ICD negative images with the label 0.
 ![import data](/Images/import_data.png)
+Great! My next problem is to format the data in a way such that the ImageFolder dataloader can pair well with my data. The general structure of my folders should look like:
+``
+/data
+  /med_gallery
+  /train
+    /0
+      /*.png
+      /*.png
+      ...
+    /1
+  /test
+    /0
+    /1
+``
