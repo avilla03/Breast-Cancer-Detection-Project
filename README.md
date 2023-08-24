@@ -13,7 +13,6 @@ I often times question the practicality of many topcis covered in school, so I e
 The directory "data" should appear now in the files tab with a subdirectory named "med_gallery", with multiple subdirecteries all containing images of ICD positive images with the label 1, and ICD negative images with the label 0.
 ![import data](/Images/import_data.png)
 Great! My next problem is to format the data in a way such that the ImageFolder dataloader can pair well with my data. The general structure of my folders should look like:
-``
 /data
   /med_gallery
   /train
@@ -25,7 +24,6 @@ Great! My next problem is to format the data in a way such that the ImageFolder 
   /test
     /0
     /1
-``
 I was able to accomplish this with the code found in data_structure.ipynb. Now, I would like to augment my data in a way such that it promotes diversity and excites new patterns to be learned in my model. Rather, to likely combat overfitting down the road. So, I will be executing the following transforms: Resize the image to 64 x 64 which is standard. Next, I will flip the data along the horizantal axis with a probability of .6. See the code in data_augment.ipynb. An example of this is as follows. 
 ![data augment](data_augment.png)
 Next, 
