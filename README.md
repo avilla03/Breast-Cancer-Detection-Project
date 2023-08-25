@@ -50,6 +50,6 @@ to interpret and generalize the data as opposed to memorizing it. It takes in a 
 
 ![Sigmoid](/Images/sigmoid.png)
 
-It will be applied in the training loop with variable name `y_pred`. It is applied in the training because I would like to keep track of the logits and the predictions seperately. A logit is the output of our entire model before passed through to the sigmoid activation function. This is important because as you will see, the loss function we choose will require that we input logits as our argument, not `y_pred`.
+It will be applied in the training loop with variable name `y_pred`. It is applied in the training because it is necessary to keep track of logits and predictions. A logit is the output of our entire model before passed through to the sigmoid activation function. This is important because as you will see, the loss function we choose will require that we input logits as our argument, not `y_pred`.
 ## The Loss Function
 
