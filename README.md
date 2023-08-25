@@ -3,7 +3,7 @@ Hello! My name is Andrew Villapudua, a student at UC San Diego in La Jolla, Cali
 
 ## Introduction
 This is an introductory level project discussing convolutional neural networks and their role in image classification. Let us layout the ground work of neural networks and how they function. Knowledge of basic linear algebra and basic calculus is recommended. Let us take a small sample of data, a 10 image set of 5 cats and 5 dogs for training, and a 4 image set of 2 dogs and 2 cats for testing. The key for the computer to interpret the data we will feed it is through numbers. Specifically, each image is comprised of 3 color channels. Red, Green, and Blue which stack on top eachother with numbers in each pixel labeling the varying intensities of R,G, and B. Then, the image also has dimensions, such height and width. With color channels, height, and width, we can represent any image we'd like. Now that we know how our model will interpret our data, how will it learn it? We will equip our models with parameters, typically named the weight and the bias. The weights and the biases will guide our input tensor through the model until it reaches the end, the output prediction. For example, let us call our input "X," our weight "w," our bias "b," and our output "y." Let us initialize our weight and bias to small random numbers, and compose the function y=wX + b. For reference, here is an image of a simple neural network.
-![NN](SimpleNN.png)
+![NN](/Images/SimpleNN.png)
 ## Resources Used
 - [Coursera Neural Networks and Deep Learning Course](https://www.coursera.org/learn/neural-networks-deep-learning)
 - [Learn PyTorch for deep learning in a day. Literally.](https://www.youtube.com/watch?v=Z_ikDlimN6A&t=67946s&pp=ygUNbGVhcm4gcHl0b3JjaA%3D%3D) By Daniel Bourke
