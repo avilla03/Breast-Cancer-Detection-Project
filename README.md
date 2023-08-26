@@ -52,4 +52,11 @@ to interpret and generalize the data as opposed to memorizing it. It takes in a 
 
 It will be applied in the training loop with variable name `y_pred`. It is applied in the training because it is necessary to keep track of logits and predictions. A logit is the output of our entire model before passed through to the sigmoid activation function. This is important because as you will see, the loss function we choose will require that we input logits as our argument, not `y_pred`.
 ## The Loss Function
+There are a plethora of loss functions offered in the pytorch documentation, but there are two that stood out for this problem. Firstly, `nn.BCELoss()` stands for binary cross entropy loss, which essentially acts as measure between the models predicted outputs and the true outputs. Refer below to the equation for BCE. 
+
+![BCE](/Images/BCE.png)
+
+y-hat are the predictions for the ith image sample, and y is the true label for the ith image sample. Secondly, we have `nn.BCEWithLogitsLoss()`. The latter provides a more efficient edge over `nn.BCELoss` because it eliminates the need for a sigmoid layer in our model, as it takes in the logits. In turn, this provides faster training times. 
+## The Optimizer
+Two optimziers especially stood out to me, `torch.optim.SGD()` which stands for Stochastic Gradient Descent, and `torch.optim.Adam()` which stands for Adaptive Moment Estimation. While SGD is a more traditional optimizer for problems such as binary classification, I chose Adam for a few reasons. Adam is highly adaptive compared to SGD as it automatically updates the learning rate for each parameter when the loss plateaus. It does this with a 
 
