@@ -60,5 +60,18 @@ y-hat are the predictions for the ith image sample, and y is the true label for 
 ## The Optimizer
 Two optimziers especially stood out to me, `torch.optim.SGD()` which stands for Stochastic Gradient Descent, and `torch.optim.Adam()` which stands for Adaptive Moment Estimation. While SGD is a more traditional optimizer for problems such as binary classification, I chose Adam for a few reasons. Adam is highly adaptive compared to SGD as it automatically updates the learning rate for each parameter when the loss plateaus. Moreover, it contains a momentum-like parameter that adds the previous gradients to help push the gradient when the curves become flatter or it reaches a local minima. Please see loss&optim.ipynb for implementation
 ## Training Loop and Test Loop
+Both loops can be found in the train&test.ipynb file in the project repository. Let's define a few key functions within the loops. An `epoch` is the amount of times the model has passed through the training set and test set. `model.train()` activates the dropout layer, batch normalization, and gradient computation. `model.forward(X).squeeze()` returns the logits of the model when an input is passed through. `.squeeze()` is used for shape congfiguration when multiplying matrices later. `y_pred` are the prediction outcomes of the model, which are passed through the sigmoid function. `loss` is the loss of the current batch, and `train_loss` is the loss summed up over the entire set. `optimizer.zero_grad()` clears gradient accumulation and prepares for the next iteration. `loss.backward` performs backpropogation in the model. It calculates all the model's parameters gradient with respect to the cost function. Then, `optimizer.step()` is called to perform the shift of parameters toward the ideal value. Next, `model.eval()` is called to disable the layers that were activated during training. `with torch.inference_mode():` turns off gradient calculation as it is not needed when testing. 
+## Final Results
+The results for model 0, a simple non-linear NN were a bit dissapointing. 
 
+![Model0](/Images/model0.png)
 
+As you can see, it seems that the model is underfitting to the data provided. This occurs when the model cannot find the correct fit to the parameters for a number of reasons such as not enough hidden units, not enough layers, too little data, etc. Next, let us examine the model1, this time with with a convolution added as well as a fully connected layer. 
+
+![Model1](/Images/model1.png)
+
+It seems that the training loss goes down steadily, but the test loss fails to converge. Although, it seems to still underfit as the training loss seems to slow down after the first few epochs. Let us try a third and final model to fit the data.
+
+![Model2](/Images/model2.png)
+
+This mdoel has been fitted with 4 convolutions, 4 pooling layers, 2 dropout layers, and a fully connected layer. It seems that the test loss was extremely volatile, but it still received an 85% accuracy on the unseen images. Although the accuracy is not as high as I would have liked, I am left with the knowledge to build deeper, more complex models in the future for other projects which I am excited for. Thank you!
