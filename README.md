@@ -1,5 +1,5 @@
 # About Me
-My name is Andrew Villapudua, a student at UC San Diego in La Jolla, California. I am a third year student (at the time of writing this) studying Math-CS. I have been running competitively for 4 in both highschool and at the division 1 level, and my hobbies include surfing, skating, and video games. Recently, I have grown an interest for deep learning models which has invoked my study in this field. 
+My name is Andrew Villapudua, a student at UC San Diego in La Jolla, California. I am a third year student studying Math-CS. I have been running competitively for the past 4 years at both the highschool level and division 1 level, and my hobbies include surfing, skating, and weight lifting. Recently, I have grown an interest for deep learning models with the rise of Chat-GPT and other chat bots. As I progressed in school, I often question the practicality of what I learn, and how the theories we are forced to master resonate with the real-world. This project alleviates this concern, as the work of a medical student with decades of practice can be replicated by a network a third-year undergrad created. 
 - My [LinkedIn](https://www.linkedin.com/in/andrew-villapudua-998b7425b/)
 - My [Instagram](https://www.instagram.com/andrewvillapuada/)
 - My Email: andrewvillapudua02@gmail.com
@@ -80,4 +80,4 @@ It seems that the training loss goes down steadily, but the test loss fails to c
 
 ![Model2](/Images/model2.png)
 
-This mdoel has been fitted with 4 convolutions, 4 pooling layers, 2 dropout layers, and a fully connected layer. It seems that the test loss was extremely volatile, but it still received an 85% accuracy on the unseen images. Although the accuracy is not as high as I would have liked, I am left with the knowledge to build deeper, more complex models in the future for other projects which I am excited for. Thank you!
+This mdoel has been fitted with 4 convolutions, 4 pooling layers, 2 dropout layers, and a fully connected layer. It seems that the test loss was extremely volatile, but it still received an 85% accuracy on the unseen images. Although the accuracy is not as high as I would have liked, I am left with the knowledge to build deeper, more complex models for future projects.
