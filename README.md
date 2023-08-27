@@ -1,5 +1,5 @@
 # About Me
-My name is Andrew Villapudua, a student at UC San Diego in La Jolla, California. I am a third year student (at the time of writing this) studying Math-CS. Recently, I have grown an interest for deep learning models which has invoked my study in this field. 
+My name is Andrew Villapudua, a student at UC San Diego in La Jolla, California. I am a third year student (at the time of writing this) studying Math-CS. I have been running competitbvely for 4 in both highschool and at the division 1 level, and my hobbies include surfing, skating, and video games. Recently, I have grown an interest for deep learning models which has invoked my study in this field. 
 - My [LinkedIn](https://www.linkedin.com/in/andrew-villapudua-998b7425b/)
 - My [Instagram](https://www.instagram.com/andrewvillapuada/)
 - My Email: andrewvillapudua02@gmail.com
